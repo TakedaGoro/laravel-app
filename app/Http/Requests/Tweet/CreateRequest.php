@@ -32,4 +32,9 @@ class CreateRequest extends FormRequest
     {
         return $this->input('tweet');
     }
+
+    Public function userId(): int
+    {
+        return $this->user()->id;
+    }
 }
